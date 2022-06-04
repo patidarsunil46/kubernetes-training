@@ -1,0 +1,2 @@
+Write a common use-case, where you will use a daemon set instead of replica set.
+In case of data back up we should keep deamon set instead of replica set becuase if multiple pod created on same worker node and stored same copy of data is use less in case of node crash. so better we should keep pod for same app's in different worker node.

@@ -1,0 +1,10 @@
+using kubectl patch we can update the image in zero downtime.
+
+kubectl patch deployment kubia -p '{"spec": {"minReadySeconds": 10}}'
+
+kubectl set image deployment kubia nodejs=luksa/kubia:v2
+
+
+or 
+
+we can use rolling update as well to update the image for running application.
